@@ -35,28 +35,28 @@ Se eligió como ejercicio fundamental la creación, llenado y recorrido de matri
 
 ### 2. Implementación en varios lenguajes
 
-#### Java (`Java/MatrizPrincipal.java`)
+#### Java (`MatrixUtils.java`)
 
 - **Declaración de la matriz**: Se define una matriz bidimensional de tipo int.
 - **Llenado de la matriz**: Se usan bucles anidados para asignar valores a cada posición.
 - **Recorrido e impresión**: Se recorre la matriz y se imprime cada elemento.
 - **Operaciones adicionales**: Puede incluir suma de todos los elementos o búsqueda de un valor específico.
 
-#### C++ (`C++/matriz_principal.cpp`)
+#### Cpp (`main.cpp``)
 
 - **Declaración de la matriz**: Se declara una matriz de tamaño fijo.
 - **Llenado de la matriz**: Se pide al usuario ingresar los valores o se llenan automáticamente con bucles.
 - **Recorrido e impresión**: Se recorre la matriz con bucles for y se imprime cada elemento.
 - **Operaciones adicionales**: Suma de elementos, cálculo de promedios o búsqueda de valores.
 
-#### C (`C/matriz_principal.c`)
+#### C (`main.c`)
 
 - **Declaración de la matriz**: Se utiliza un arreglo bidimensional de tamaño fijo.
 - **Llenado de la matriz**: Se utiliza scanf o asignación automática para llenar la matriz.
 - **Recorrido e impresión**: Mediante bucles for, se recorre y se imprime la matriz.
 - **Operaciones adicionales**: Suma de elementos o manipulación básica de los datos.
 
-#### Python (`Python/matriz_principal.py`)
+#### Python (`main.py`)
 
 - **Declaración de la matriz**: Se usan listas anidadas para simular una matriz.
 - **Llenado de la matriz**: Se generan los valores usando comprensión de listas o input del usuario.
