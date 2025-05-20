@@ -94,7 +94,18 @@ Se eligió como ejercicio fundamental la creación, llenado y recorrido de matri
   - `matriz_principal.py`: Usa listas anidadas para simular matrices y realiza operaciones básicas y recorridos de manera sencilla.
 
 ---
+## Conclusiones del Proyecto
+Se implementaron y compararon dos algoritmos de multiplicación de matrices: el algoritmo Naive (clásico de triple bucle) y el algoritmo de Strassen (divide y vencerás), evaluando su rendimiento en C, C++, Java y Python.
 
+El algoritmo Naive demostró ser más eficiente y estable en matrices pequeñas o medianas, debido a su bajo uso de memoria y mejor comportamiento con la jerarquía de caché.
+
+El algoritmo Strassen mostró ventajas en tiempo de ejecución únicamente para matrices grandes (n ≥ 512), a costa de un uso significativamente mayor de memoria y mayor complejidad en su implementación.
+
+Los lenguajes C y C++ ofrecieron el mejor rendimiento gracias a su cercanía al hardware y la posibilidad de aplicar optimizaciones del compilador (-O3). En contraste, Python tuvo el peor desempeño debido a su naturaleza interpretada.
+
+Java, aunque menos eficiente que C++, logró tiempos razonables gracias a la optimización en tiempo de ejecución (JIT), pero con mayor consumo de memoria.
+
+Este proyecto demuestra que la eficiencia algorítmica depende tanto de la complejidad teórica como del entorno de ejecución y el lenguaje utilizado.
 
 
 
