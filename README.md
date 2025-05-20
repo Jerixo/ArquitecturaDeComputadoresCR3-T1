@@ -1,12 +1,14 @@
 # Arquitectura de Computadores CR3 - Tarea 1
 
-## 📝 Finalidad del Repositorio
+## Finalidad del Repositorio
 
 Este repositorio reúne los ejercicios desarrollados para la Tarea 1 del curso de Arquitectura de Computadores CR3. El objetivo es mostrar, de manera comparativa, cómo se implementan y manipulan matrices en distintos lenguajes de programación, permitiendo analizar las diferencias en sintaxis, lógica y funcionamiento.
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
+
+- tiene como objetivo analizar y comparar el comportamiento de dos algoritmos clásicos de multiplicación de matrices: el algoritmo ingenuo (naive) y el algoritmo de Strassen. La implementación se desarrolló en lenguaje C para aprovechar la cercanía al hardware y observar el rendimiento computacional de forma más precisa. Se valuaron aspectos como el tiempo de ejecución y la memoria estimada para diferentes tamaños de matrices cuadradas.
 
 - Comprender cómo se declaran, inicializan y manipulan matrices en Java, C++, C y Python.
 - Analizar ventajas, diferencias y particularidades de cada lenguaje al trabajar con estructuras bidimensionales.
@@ -14,38 +16,79 @@ Este repositorio reúne los ejercicios desarrollados para la Tarea 1 del curso d
 
 ---
 
-## 👣 Paso a Paso: ¿Cómo se hizo este repositorio?
+## 👣 Paso a Paso: ¿Cómo se hizo este repositorio y cada código?
 
-1. **Selección de ejercicios:**  
-   Se seleccionaron problemas fundamentales relacionados con el manejo de matrices, operaciones aritméticas y lógica computacional.
+### 1. Selección del ejercicio principal
 
-2. **Implementación en varios lenguajes:**  
-   Cada ejercicio fue resuelto en Java, C++, C y Python, aplicando las mejores prácticas y características propias de cada lenguaje.
+Se eligió como ejercicio fundamental la creación, llenado y recorrido de matrices, así como la realización de operaciones básicas (como suma de elementos) sobre ellas.
 
-3. **Pruebas y comparación:**  
-   Se ejecutaron los programas para garantizar equivalencia en resultados y se documentaron diferencias relevantes.
+---
 
-4. **Organización:**  
-   Los archivos se estructuraron en carpetas por lenguaje, facilitando la navegación y comparación.
+### 2. Implementación en varios lenguajes
 
-5. **Documentación:**  
-   Se elaboró este README detallando el objetivo, la finalidad, el proceso y el contenido del repositorio.
+#### Java (`Java/MatrizPrincipal.java`)
+
+- **Declaración de la matriz**: Se define una matriz bidimensional de tipo int.
+- **Llenado de la matriz**: Se usan bucles anidados para asignar valores a cada posición.
+- **Recorrido e impresión**: Se recorre la matriz y se imprime cada elemento.
+- **Operaciones adicionales**: Puede incluir suma de todos los elementos o búsqueda de un valor específico.
+
+#### C++ (`C++/matriz_principal.cpp`)
+
+- **Declaración de la matriz**: Se declara una matriz de tamaño fijo.
+- **Llenado de la matriz**: Se pide al usuario ingresar los valores o se llenan automáticamente con bucles.
+- **Recorrido e impresión**: Se recorre la matriz con bucles for y se imprime cada elemento.
+- **Operaciones adicionales**: Suma de elementos, cálculo de promedios o búsqueda de valores.
+
+#### C (`C/matriz_principal.c`)
+
+- **Declaración de la matriz**: Se utiliza un arreglo bidimensional de tamaño fijo.
+- **Llenado de la matriz**: Se utiliza scanf o asignación automática para llenar la matriz.
+- **Recorrido e impresión**: Mediante bucles for, se recorre y se imprime la matriz.
+- **Operaciones adicionales**: Suma de elementos o manipulación básica de los datos.
+
+#### Python (`Python/matriz_principal.py`)
+
+- **Declaración de la matriz**: Se usan listas anidadas para simular una matriz.
+- **Llenado de la matriz**: Se generan los valores usando comprensión de listas o input del usuario.
+- **Recorrido e impresión**: Se usan bucles for para mostrar el contenido.
+- **Operaciones adicionales**: Suma de filas/columnas, búsqueda de valores o uso de librerías como NumPy para operaciones más avanzadas.
+
+---
+
+### 3. Pruebas y comparación
+
+- Se ejecutó cada código verificando que los resultados fueran equivalentes en todos los lenguajes.
+- Se documentaron diferencias, por ejemplo, la necesidad de manejo de memoria en C o la facilidad de manipulación en Python.
+
+---
+
+### 4. Organización del repositorio
+
+- Se crearon carpetas para cada lenguaje, con el archivo principal de la matriz y posibles variantes o archivos auxiliares.
+- Se mantuvo una estructura clara para facilitar la comparación, navegación y reutilización de los códigos.
+
+---
+
+### 5. Documentación
+
+- Se elaboró este README explicando la finalidad, los objetivos, el proceso de desarrollo y el contenido de cada archivo y lenguaje.
 
 ---
 
 ## 📁 Archivos y carpetas del repositorio
 
 - **Java/**  
-  - `MatrizPrincipal.java`: Programa principal que muestra creación, llenado, recorrido y operaciones con matrices en Java.
+  - `MatrizPrincipal.java`: Crea, llena, recorre e imprime una matriz. Muestra operaciones básicas como suma de elementos.
 
 - **C++/**  
-  - `matriz_principal.cpp`: Implementación principal de matrices en C++, con ejemplos de llenado, suma y recorrido.
+  - `matriz_principal.cpp`: Muestra la declaración, llenado e impresión de una matriz, así como operaciones como suma o búsqueda.
 
 - **C/**  
-  - `matriz_principal.c`: Ejemplo de manejo de matrices en C, mostrando funciones básicas para manipulación y visualización.
+  - `matriz_principal.c`: Implementa una matriz bidimensional, la recorre e imprime, y realiza operaciones básicas.
 
 - **Python/**  
-  - `matriz_principal.py`: Script principal en Python para trabajar con listas anidadas (matrices), mostrando operaciones y ejemplos.
+  - `matriz_principal.py`: Usa listas anidadas para simular matrices y realiza operaciones básicas y recorridos de manera sencilla.
 
 ---
 
