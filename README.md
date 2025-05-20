@@ -91,14 +91,26 @@ Se eligió como ejercicio fundamental la creación, llenado y recorrido de matri
 
 ## 📁 Archivos y carpetas del repositorio
 
-- **C/**  
-  - Código en C que llena la matriz con la suma de los índices, la imprime y suma los elementos.
-- **CPP/**  
-  - Código en C++ que llena la matriz con productos de los índices, la imprime y suma los elementos.
-- **Multp.Matriz JAVA/**  
-  - Código en Java que llena la matriz con valores del 1 al 9, la imprime y suma los elementos.
-- **Python/**  
-  - Código en Python que llena la matriz con el cuadrado de la suma de los índices, la imprime y suma los elementos.
+- **C/**
+  - `README.md`: Documentación sobre el código en C.
+  - `main.c`: Código fuente principal en C para operaciones con matrices.
+
+- **CPP/**
+  - `README.md`: Documentación sobre el código en C++.
+  - `main.cpp`: Código fuente principal en C++ para operaciones con matrices.
+  - `benchmark_results.csv`: Resultados de pruebas de rendimiento en C++.
+
+- **Multp.Matriz JAVA/**
+  - `MatrixUtils.java`: Utilidades para manejo de matrices en Java.
+  - `NaiveMultiplication.java`: Implementación del algoritmo clásico de multiplicación de matrices en Java.
+  - `PerformanceTest.java`: Pruebas de rendimiento de algoritmos de multiplicación de matrices en Java.
+  - `StrassenMultiplication.java`: Implementación del algoritmo de Strassen para multiplicación de matrices en Java.
+  - `README.md`: Documentación sobre el código en Java.
+
+- **Python/**
+  - `README.md`: Documentación sobre el código en Python.
+  - `main.py`: Código fuente principal en Python para operaciones con matrices.
+  - `benchmark_results.csv`: Resultados de pruebas de rendimiento en Python.
 
 ---
 ## Conclusiones del Proyecto
