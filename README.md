@@ -2,7 +2,13 @@
 
 ## Finalidad del Repositorio
 
-Este repositorio reúne los ejercicios desarrollados para la Tarea 1 del curso de Arquitectura de Computadores CR3. El objetivo es mostrar, de manera comparativa, cómo se implementan y manipulan matrices en distintos lenguajes de programación, permitiendo analizar las diferencias en sintaxis, lógica y funcionamiento.
+Este repositorio contiene la implementación y evaluación comparativa de algoritmos clásicos de multiplicación de matrices —Naive y Strassen— desarrollados como parte de la Tarea 1 del curso de Arquitectura de Computadores CR3. El objetivo principal es analizar el impacto del algoritmo, el lenguaje de programación (C, C++, Java, Python) y las características del entorno de ejecución en el rendimiento computacional.
+
+El proyecto permite:
+
+Evaluar la eficiencia algorítmica bajo métricas como tiempo de ejecución y uso de memoria.
+
+Comparar la relación entre modelo de ejecución (compilado vs. interpretado) y el comportamiento real del hardware.
 
 ---
 
@@ -68,30 +74,31 @@ Se eligió como ejercicio fundamental la creación, llenado y recorrido de matri
 
 ### 4. Organización del repositorio
 
-- Se crearon carpetas para cada lenguaje, con el archivo principal de la matriz y posibles variantes o archivos auxiliares.
-- Se mantuvo una estructura clara para facilitar la comparación, navegación y reutilización de los códigos.
+- Cada lenguaje tiene su carpeta con el archivo principal de la matriz:
+    - `C/`
+    - `CPP/`
+    - `Multp.Matriz JAVA/`
+    - `Python/`
+- Estructura clara para facilitar la comparación y reutilización de los códigos.
 
 ---
 
 ### 5. Documentación
 
-- Se elaboró este README explicando la finalidad, los objetivos, el proceso de desarrollo y el contenido de cada archivo y lenguaje.
+- Este README explica la finalidad, los objetivos, el proceso de desarrollo y el contenido de cada archivo y lenguaje.
 
 ---
 
 ## 📁 Archivos y carpetas del repositorio
 
-- **Java/**  
-  - `MatrizPrincipal.java`: Crea, llena, recorre e imprime una matriz. Muestra operaciones básicas como suma de elementos.
-
-- **C++/**  
-  - `matriz_principal.cpp`: Muestra la declaración, llenado e impresión de una matriz, así como operaciones como suma o búsqueda.
-
 - **C/**  
-  - `matriz_principal.c`: Implementa una matriz bidimensional, la recorre e imprime, y realiza operaciones básicas.
-
+  - Código en C que llena la matriz con la suma de los índices, la imprime y suma los elementos.
+- **CPP/**  
+  - Código en C++ que llena la matriz con productos de los índices, la imprime y suma los elementos.
+- **Multp.Matriz JAVA/**  
+  - Código en Java que llena la matriz con valores del 1 al 9, la imprime y suma los elementos.
 - **Python/**  
-  - `matriz_principal.py`: Usa listas anidadas para simular matrices y realiza operaciones básicas y recorridos de manera sencilla.
+  - Código en Python que llena la matriz con el cuadrado de la suma de los índices, la imprime y suma los elementos.
 
 ---
 ## Conclusiones del Proyecto
