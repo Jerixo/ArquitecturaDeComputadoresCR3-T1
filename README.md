@@ -20,7 +20,10 @@ Este repositorio reúne los ejercicios desarrollados para la Tarea 1 del curso d
 
 ### 1. Selección del ejercicio principal
 
-Se eligió como ejercicio fundamental la creación, llenado y recorrido de matrices, así como la realización de operaciones básicas (como suma de elementos) sobre ellas.
+Se eligió como ejercicio fundamental la creación, llenado y recorrido de matrices, así como la realización de operaciones básicas (como suma de elementos) sobre ellas,
+    Desde el punto de vista algorítmico, el método clásico o Naive presenta una complejidad computacional de orden cúbico O(n³), mientras que el algoritmo de Strassen, basado en el paradigma de divide y vencerás, reduce el número de multiplicaciones necesarias, alcanzando una complejidad aproximada de O(n^2.81).
+     Experimentalmente, esta mejora teórica se manifiesta parcialmente según el tamaño de las matrices. Para dimensiones pequeñas (por ejemplo, n = 128), ambas técnicas arrojan tiempos comparables debido a que la sobrecarga recursiva de Strassen compensa su ventaja teórica. Sin embargo, a partir de tamaños mayores (n ≥ 512), Strassen comienza a superar consistentemente al algoritmo ingenuo en lenguajes compilados como C y C++. En contraste, en entornos interpretados como Python, los beneficios del algoritmo de Strassen se ven atenuados por la sobrecarga del runtime.
+
 
 ---
 
@@ -92,85 +95,8 @@ Se eligió como ejercicio fundamental la creación, llenado y recorrido de matri
 
 ---
 
-## 🧮 Explicación de matrices en cada lenguaje
 
-### Java
 
-En Java, una matriz bidimensional se declara como un arreglo de arreglos.  
-Ejemplo de declaración y uso:
-```java
-int[][] matriz = new int[3][3]; // Matriz de 3 filas y 3 columnas
-matriz[0][0] = 5; // Asignar valor a la posición fila 0, columna 0
 
-// Recorrido y llenado con bucles
-for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-        matriz[i][j] = i + j;
-    }
-}
-```
-Java requiere especificar el tipo de datos y las dimensiones. El acceso a elementos se hace con `matriz[fila][columna]`.
-
----
-
-### C++
-
-En C++, las matrices son arreglos bidimensionales de tamaño fijo o pueden ser dinámicas usando punteros.
-Ejemplo básico:
-```cpp
-int matriz[3][3];
-matriz[0][0] = 5;
-
-for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-        matriz[i][j] = i * j;
-    }
-}
-```
-C++ permite usar punteros para crear matrices dinámicamente, pero el ejemplo muestra la forma estática más habitual y clara para ejercicios básicos.
-
----
-
-### C
-
-En C, las matrices se manejan como arreglos bidimensionales estáticos.
-Ejemplo:
-```c
-int matriz[3][3];
-matriz[0][0] = 5;
-
-for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-        matriz[i][j] = i - j;
-    }
-}
-```
-El manejo de memoria es explícito y el acceso a los elementos se hace igual que en C++: `matriz[fila][columna]`.
-
----
-
-### Python
-
-En Python no existen “matrices” como tipo nativo, pero se pueden simular usando listas anidadas o usar librerías como NumPy para operaciones avanzadas.
-Ejemplo con listas anidadas:
-```python
-matriz = [[0 for j in range(3)] for i in range(3)]
-matriz[0][0] = 5
-
-for i in range(3):
-    for j in range(3):
-        matriz[i][j] = i + j
-```
-El acceso es igual: `matriz[fila][columna]`. Python es más flexible y permite crear matrices dinámicas fácilmente.
-
----
-
-## ✅ Conclusiones
-
-- Cada lenguaje tiene su propia forma de declarar y manipular matrices, lo que permite comparar enfoques y comprender mejor la relación entre la lógica computacional y la implementación concreta.
-- Java, C y C++ requieren declarar el tamaño y tipo de la matriz; Python es más flexible pero menos estricto.
-- Este repositorio sirve como guía y referencia para entender el manejo de matrices en distintos lenguajes y como punto de partida para ejercicios más avanzados en arquitectura de computadores.
-
----
 
 Desarrollado por Jerixo y colaboradores para fines educativos.
