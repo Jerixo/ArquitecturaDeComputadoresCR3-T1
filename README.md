@@ -125,8 +125,3 @@ Los lenguajes C y C++ ofrecieron el mejor rendimiento gracias a su cercanía al 
 Java, aunque menos eficiente que C++, logró tiempos razonables gracias a la optimización en tiempo de ejecución (JIT), pero con mayor consumo de memoria.
 
 Este proyecto demuestra que la eficiencia algorítmica depende tanto de la complejidad teórica como del entorno de ejecución y el lenguaje utilizado.
-
-
-
-
-Desarrollado por Jerixo y colaboradores para fines educativos.
